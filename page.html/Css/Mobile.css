@@ -1,0 +1,150 @@
+
+.botao-A i{
+    color: #fff;
+    font-size: 40px;
+    display: none;
+}
+.mobile{
+    background-color: #c7c7c7a1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+.mobile.Abrir{
+    width: 70%;
+}
+.mobile.Abrir ~ .overlay{
+    display: block;
+}
+.mobile .botao-F{
+    padding: 20px 5%;
+}
+.mobile .botao-F i{
+    color: #05173c;
+    font-size: 25px;
+    font-weight: 600;
+}
+.mobile nav ul{
+    text-align: right;
+}
+.mobile nav ul li a{
+    color: #383838;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 8%;
+    display: block;
+}
+.mobile nav ul li a:hover{
+    background-color: #05173c;
+    color: #fff;
+}
+.overlay{
+    background-color: #c7c7c731;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+/* REPOSIVO GERAL */
+@media screen and (max-width: 500px){
+    /* NOSSO VEÍCULO */
+    .box{
+        width: 325px;
+        height: 250px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    /* MENU */
+    .desktop{
+        display: none;
+    }
+    .botao-A i{
+        display: block;
+    }
+    /* DUVIDA */
+    .duvida .box{
+        height: 250px;
+    }
+    .duvida .box h2{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 950px){
+    /* GERAL */
+    section{
+        padding: 40px 5%;
+    }
+    .flex{
+        display: flex; 
+        flex-direction: column; 
+    }
+    h1{
+        font-size: 28px; 
+        line-height: 20px;
+    }
+    .titulo{
+        font-size: 28px; 
+        line-height: 20px;
+    }
+    /* TOPO SITE */
+    section.topo .flex{
+        flex-direction: column-reverse; 
+        gap: 40px;
+    }
+    img{
+        width: 100%;
+    }
+    /* PORTIFOLIO */
+    .port .interface h2{
+        font-size: 28px;
+    }
+    /* SERVIÇOS */
+    .flex .img-serviço{
+        width: 100%;
+    }
+    .card{
+        min-height: 300px;
+    }
+    .texto-serviço .texto h3{
+        font-size: 28px;
+    }
+    /* FOOTER */
+    footer .content-boxs{
+        flex-direction: column;
+    }
+    footer .img-footer{
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    footer .img-footer img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1135px){
+    /* NOSSO VEICULO */
+    .nosso-V .flex{
+        flex-direction: column;
+    }
+    /* SOBRE NÓS */
+    section.sobre .flex{
+        flex-direction: column-reverse;
+    }
+    .sobre h3{
+        text-align: center;
+    }
+}
+/* ALTURA DO HEADER */
+@media screen and (max-height: 1280px){
+    section.topo .flex{
+        margin-top: 100px;
+    }
+}
